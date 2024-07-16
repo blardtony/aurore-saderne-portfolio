@@ -2,7 +2,9 @@ import { PropsWithChildren } from "react";
 
 const Title = ({ children }: PropsWithChildren) => {
   return (
-    <h1 className="text-3xl font-bold uppercase text-green">{children}</h1>
+    <h1 className="text-green-200 mb-4 text-5xl font-bold uppercase">
+      {children}
+    </h1>
   );
 };
 
