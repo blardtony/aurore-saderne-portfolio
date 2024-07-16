@@ -1,6 +1,8 @@
 import Title from "../common/Title";
 import hero from "../../assets/hero.png";
 import Section from "../common/Section";
+import Button from "../common/Button";
+import cv from "../../../public/cv.pdf";
 
 const Hero = () => {
   return (
@@ -9,8 +11,12 @@ const Hero = () => {
         <div>
           <Title>
             Aurore Saderne
-            <span className="block text-6xl">portfolio</span>
+            <span className="text-black mt-2 block text-3xl">Graphiste</span>
           </Title>
+          <p className="mb-2">
+            Je suis une étudiante en direction artistique digitale.
+          </p>
+          <Button url={cv}>Télécharger mon CV</Button>
         </div>
         <img
           className="max-h-[500px]"
