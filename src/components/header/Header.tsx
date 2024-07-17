@@ -6,7 +6,7 @@ const Header = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen);
   };
   const handleScroll = () => {
     if (window.scrollY > 80) {
@@ -30,17 +30,17 @@ const Header = () => {
         {isOpen ? (
           <XMarkIcon
             className="z-30 h-10 cursor-pointer text-white"
-            onClick={toggleMenu}
+            onClick={() => toggleMenu()}
           />
         ) : (
           <Bars3BottomLeftIcon
             className="z-30 h-10 cursor-pointer"
-            onClick={toggleMenu}
+            onClick={() => toggleMenu()}
           />
         )}
         <ul
           className={
-            "fixed right-0 top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-500 md:w-80 " +
+            "fixed right-0 top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-500 ease-in-out md:w-80 " +
             (!isOpen ? "-right-full" : "rigth-0")
           }
         >
