@@ -1,4 +1,5 @@
 import "./App.css";
+import Contact from "./components/contact/Contact";
 import SchoolExperience from "./components/experience/SchoolExperience";
 import WorkExperience from "./components/experience/WorkExperience";
 import Header from "./components/header/Header";
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <WorkExperience />
         <SchoolExperience />
+        <Contact />
       </div>
     </div>
   );
