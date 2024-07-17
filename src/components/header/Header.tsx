@@ -45,16 +45,24 @@ const Header = () => {
           }
         >
           <li className="upppercase py-6 text-2xl font-bold">
-            <a href="#hero">Accueil</a>
+            <a href="#hero" onClick={toggleMenu}>
+              Accueil
+            </a>
           </li>
           <li className="upppercase py-6 text-2xl font-bold">
-            <a href="#work">Expériences</a>
+            <a href="#work" onClick={toggleMenu}>
+              Expériences
+            </a>
           </li>
           <li className="upppercase py-6 text-2xl font-bold">
-            <a href="#school">Parcours scolaire</a>
+            <a href="#school" onClick={toggleMenu}>
+              Parcours scolaire
+            </a>
           </li>
           <li className="upppercase py-6 text-2xl font-bold">
-            <a href="#contact">Contactez-moi</a>
+            <a href="#contact" onClick={toggleMenu}>
+              Contactez-moi
+            </a>
           </li>
         </ul>
       </nav>
