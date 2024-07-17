@@ -12,8 +12,10 @@ const Hero = () => {
           <Title>Aurore Saderne</Title>
           <div className="my-2 text-3xl font-bold text-black">Graphiste</div>
           <p className="mb-2">
-            Je suis une étudiante en direction artistique digitale.
+            Je suis une étudiante qui râle tout le temps et qui est jamais
+            contente.
           </p>
+          <p className="mb-2">J'aime me plaindre</p>
           <Button url={cv}>Télécharger mon CV</Button>
         </div>
         <img
