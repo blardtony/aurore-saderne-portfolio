@@ -14,20 +14,20 @@ const experiences: Experience[] = [
     title: "Bachelor Game Design & Jeux Vidéo",
     location: "MyDigitalSchool Montpellier",
     description:
-      "Le premier cycle s’organise autour de nombreux projets faisant travailler en équipe les étudiants ayant choisis au cours de la première année de se spécialiser en Game Art",
+      "Cette formation complète en direction artistique en formant à tous les outils nécessaires à la création numérique, en design web, mais aussi et surtout en management afin d'être capable de gérer une équipe.",
   },
   {
     date: "2020 - 2023",
     title: "Bachelor Game Design & Jeux Vidéo",
     location: "E-artsup Paris",
     description:
-      "Cette formation complète en direction artistique en formant à tous les outils nécessaires à la création numérique, en design web, mais aussi et surtout en management afin d'être capable de gérer une équipe.",
+      "Le premier cycle s'organise autour de nombreux projets faisant travailler en équipe les étudiants ayant choisis au cours de la première année de se spécialiser en Game Art",
   },
 ];
 const SchoolExperience = () => {
   return (
     <Section>
-      <Title>Expérience</Title>
+      <Title>Parcours scolaire</Title>
       <div className="grid">
         {experiences.map((experience, index) => (
           <ExperienceItem
