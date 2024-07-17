@@ -15,8 +15,8 @@ const experiences: Experience[] = [
     location: "Paris / Montpellier",
     descriptions: [
       "Logo pour l'asscoiation des étudiants de l'école",
-      "Logo pour un groupe de musique",
-      "Logo et poster pour une association d'événementiel",
+      "Logo pour un groupe de reprise de chansons françaises",
+      "Logo et posters pour une association d'événementiel",
     ],
   },
 ];
