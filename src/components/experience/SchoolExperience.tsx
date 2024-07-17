@@ -10,14 +10,8 @@ type Experience = {
 };
 const experiences: Experience[] = [
   {
-    date: "2024 - 2026",
-    title: "Master Direction Artistique Digitale",
-    location: "MyDigitalSchool Montpellier",
-    descriptions: ["TODO", "TODO", "TODO"],
-  },
-  {
     date: "2020 - 2023",
-    title: "Bachelor Game Design & Jeux Vidéo",
+    title: "Bachelor Game Art & Jeux Vidéo",
     location: "E-artsup Paris",
     descriptions: ["TODO", "TODO", "TODO"],
   },
