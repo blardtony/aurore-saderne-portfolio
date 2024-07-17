@@ -1,5 +1,6 @@
 import "./App.css";
-import Experience from "./components/experience/Experience";
+import SchoolExperience from "./components/experience/SchoolExperience";
+import WorkExperience from "./components/experience/WorkExperience";
 import Hero from "./components/hero/Hero";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="bg-background">
       <div className="container mx-auto">
         <Hero />
-        <Experience />
+        <WorkExperience />
+        <SchoolExperience />
       </div>
     </div>
   );
