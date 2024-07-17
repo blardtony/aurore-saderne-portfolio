@@ -26,7 +26,7 @@ const experiences: Experience[] = [
 ];
 const SchoolExperience = () => {
   return (
-    <Section>
+    <Section id={"school"}>
       <Title>Parcours scolaire</Title>
       <div className="grid">
         {experiences.map((experience, index) => (

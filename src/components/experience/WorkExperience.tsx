@@ -18,7 +18,7 @@ const experiences: Experience[] = [
 ];
 const WorkExperience = () => {
   return (
-    <Section>
+    <Section id={"work"}>
       <Title>Expérience</Title>
       <div className="grid">
         {experiences.map((experience, index) => (

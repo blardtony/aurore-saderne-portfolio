@@ -6,7 +6,7 @@ import cv from "../../../public/cv.pdf";
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id={"hero"}>
       <div className="grid place-items-center items-center gap-8 pt-28 lg:grid-cols-2 lg:pt-0">
         <div>
           <Title>
