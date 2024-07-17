@@ -7,11 +7,11 @@ import cv from "../../../public/cv.pdf";
 const Hero = () => {
   return (
     <Section>
-      <div className="grid place-items-center items-center gap-8 lg:grid-cols-2">
+      <div className="grid place-items-center items-center gap-8 pt-28 lg:grid-cols-2 lg:pt-0">
         <div>
           <Title>
             Aurore Saderne
-            <span className="text-black mt-2 block text-3xl">Graphiste</span>
+            <span className="mt-2 block text-3xl text-black">Graphiste</span>
           </Title>
           <p className="mb-2">
             Je suis une étudiante en direction artistique digitale.
