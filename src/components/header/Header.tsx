@@ -45,13 +45,16 @@ const Header = () => {
           }
         >
           <li className="upppercase py-6 text-2xl font-bold">
-            <a>Accueil</a>
+            <a href="#hero">Accueil</a>
           </li>
           <li className="upppercase py-6 text-2xl font-bold">
-            <a>Expériences</a>
+            <a href="#work">Expériences</a>
           </li>
           <li className="upppercase py-6 text-2xl font-bold">
-            <a>Parcours</a>
+            <a href="#school">Parcours scolaire</a>
+          </li>
+          <li className="upppercase py-6 text-2xl font-bold">
+            <a href="#contact">Contactez-moi</a>
           </li>
         </ul>
       </nav>
