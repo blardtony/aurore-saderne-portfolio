@@ -6,22 +6,20 @@ type Experience = {
   date: string;
   title: string;
   location: string;
-  description: string;
+  descriptions: string[];
 };
 const experiences: Experience[] = [
   {
     date: "2024 - 2026",
-    title: "Bachelor Game Design & Jeux Vidéo",
+    title: "Master Direction Artistique Digitale",
     location: "MyDigitalSchool Montpellier",
-    description:
-      "Cette formation complète en direction artistique en formant à tous les outils nécessaires à la création numérique, en design web, mais aussi et surtout en management afin d'être capable de gérer une équipe.",
+    descriptions: ["TODO", "TODO", "TODO"],
   },
   {
     date: "2020 - 2023",
     title: "Bachelor Game Design & Jeux Vidéo",
     location: "E-artsup Paris",
-    description:
-      "Le premier cycle s'organise autour de nombreux projets faisant travailler en équipe les étudiants ayant choisis au cours de la première année de se spécialiser en Game Art",
+    descriptions: ["TODO", "TODO", "TODO"],
   },
 ];
 const SchoolExperience = () => {

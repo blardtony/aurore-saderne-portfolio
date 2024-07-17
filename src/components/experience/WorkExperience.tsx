@@ -6,14 +6,18 @@ type Experience = {
   date: string;
   title: string;
   location: string;
-  description: string;
+  descriptions: string[];
 };
 const experiences: Experience[] = [
   {
     date: "2023 - aujourd'hui",
     title: "Graphiste",
     location: "Paris / Montpellier",
-    description: "Graphiste bénévole pour des associations",
+    descriptions: [
+      "Logo pour l'asscoiation des étudiants de l'école",
+      "Logo pour un groupe de musique",
+      "Logo et poster pour une association d'événementiel",
+    ],
   },
 ];
 const WorkExperience = () => {

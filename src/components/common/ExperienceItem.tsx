@@ -2,7 +2,7 @@ type Experience = {
   date: string;
   title: string;
   location: string;
-  description: string;
+  descriptions: string[];
 };
 type ExperienceItemProps = {
   experience: Experience;
@@ -23,7 +23,13 @@ const ExperienceItem = ({ experience, icon }: ExperienceItemProps) => {
       <div className="mb-4 text-lg font-bold text-green-200">
         {experience.location}
       </div>
-      <p className="mb-5">{experience.description}</p>
+      <ul>
+        {experience.descriptions.map((description, index) => (
+          <li key={index} className="mb-4 pl-4 text-lg font-bold">
+            {description}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
