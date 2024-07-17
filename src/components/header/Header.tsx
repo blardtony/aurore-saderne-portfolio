@@ -40,8 +40,8 @@ const Header = () => {
         )}
         <ul
           className={
-            "fixed right-0 top-0 z-20 h-full w-64 content-center bg-black text-center text-white transition-all duration-300 md:w-80 " +
-            (!isOpen ? "-right-96" : "rigth-0")
+            "fixed right-0 top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-500 md:w-80 " +
+            (!isOpen ? "-right-full" : "rigth-0")
           }
         >
           <li className="upppercase py-6 text-2xl font-bold">
