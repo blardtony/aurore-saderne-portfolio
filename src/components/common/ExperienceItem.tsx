@@ -19,8 +19,8 @@ const ExperienceItem = ({ experience, icon }: ExperienceItemProps) => {
       <div className="mb-3 inline-block rounded-2xl bg-yellow px-4 py-1 font-bold text-black">
         {experience.date}
       </div>
-      <h3 className="mb-1 text-2xl font-bold">{experience.title}</h3>
-      <div className="mb-4 text-lg font-bold text-green-200">
+      <h3 className="mb-1 text-xl font-bold lg:text-2xl">{experience.title}</h3>
+      <div className="mb-4 text-base font-bold text-green-200 lg:text-lg">
         {experience.location}
       </div>
       <ul>
