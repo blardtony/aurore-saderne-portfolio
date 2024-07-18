@@ -7,7 +7,7 @@ import Hero from "./components/hero/Hero";
 
 function App() {
   return (
-    <div className="bg-background">
+    <>
       <Header />
       <div className="container mx-auto px-6">
         <Hero />
@@ -15,7 +15,7 @@ function App() {
         <SchoolExperience />
         <Contact />
       </div>
-    </div>
+    </>
   );
 }
 
