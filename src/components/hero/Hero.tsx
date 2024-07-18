@@ -9,8 +9,10 @@ const Hero = () => {
     <Section id={"hero"}>
       <div className="grid place-items-center items-center gap-8 lg:grid-cols-2">
         <div>
-          <Title>Aurore Saderne</Title>
-          <div className="my-2 text-3xl font-bold text-black">Graphiste</div>
+          <Title big>Aurore Saderne</Title>
+          <div className="my-2 text-2xl font-bold text-black md:text-3xl">
+            Graphiste
+          </div>
           <p className="mb-2">
             Je suis une étudiante qui râle tout le temps et qui est jamais
             contente.
