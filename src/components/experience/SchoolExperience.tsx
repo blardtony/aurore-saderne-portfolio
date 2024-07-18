@@ -12,7 +12,7 @@ const experiences: Experience[] = [
   {
     date: "2020 - 2023",
     title: "Bachelor Game Art & Jeux Vidéo",
-    location: "E-artsup Paris",
+    location: "E-artsup - Paris",
     descriptions: ["TODO", "TODO", "TODO"],
   },
 ];

@@ -12,7 +12,7 @@ const experiences: Experience[] = [
   {
     date: "2023 - aujourd'hui",
     title: "Graphiste",
-    location: "Paris / Montpellier",
+    location: "Freelance - Paris / Montpellier",
     descriptions: [
       "Logo pour l'asscoiation des étudiants de l'école",
       "Logo pour un groupe de reprise de chansons françaises",
