@@ -46,7 +46,7 @@ const Header = () => {
         animate={isOpen ? "visible" : "hidden"}
         transition={{ duration: 0.2, ease: "easeIn" }}
         className={
-          "fixed left-0 top-0 z-20 h-full w-full transform content-center bg-black text-center text-white lg:w-80"
+          "fixed left-0 top-0 z-20 grid h-full w-full transform content-center bg-black text-center text-white lg:w-80"
         }
       >
         <XMarkIcon
