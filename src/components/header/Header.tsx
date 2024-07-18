@@ -1,6 +1,8 @@
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../common/Button";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
@@ -19,30 +21,36 @@ const Header = () => {
   return (
     <nav
       className={
-        "sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out lg:h-20 " +
+        "sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out " +
         (isScrolling ? "shadow-md" : " shadow-none")
       }
     >
-      <Link className="text-xl font-bold" to={"/"}>
-        Aurore Saderne
-      </Link>
-      {isOpen ? (
-        <XMarkIcon
-          className="z-30 h-full max-h-10 cursor-pointer text-white"
-          onClick={() => toggleMenu()}
-        />
-      ) : (
+      <div className="grid h-full grid-flow-col items-center gap-8">
         <Bars3BottomLeftIcon
-          className="z-30 h-full max-h-10 cursor-pointer"
+          className={"h-8 cursor-pointer"}
           onClick={() => toggleMenu()}
         />
-      )}
-      <ul
+        <Link className="hidden text-xl font-bold lg:block" to={"/"}>
+          Aurore Saderne
+        </Link>
+      </div>
+      <Button url={"/#contact"}>Contactez-moi</Button>
+      <motion.ul
+        initial={{ x: "-100%" }}
+        variants={{
+          visible: { x: 0 },
+          hidden: { x: "-100%" },
+        }}
+        animate={isOpen ? "visible" : "hidden"}
+        transition={{ duration: 0.2, ease: "easeIn" }}
         className={
-          "fixed top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-200 ease-in-out lg:w-80 lg:duration-500 " +
-          (isOpen ? "right-0" : "-right-full")
+          "fixed left-0 top-0 z-20 h-full w-full transform content-center bg-black text-center text-white lg:w-80"
         }
       >
+        <XMarkIcon
+          className={"absolute left-4 top-4 h-8 max-h-10 cursor-pointer"}
+          onClick={() => toggleMenu()}
+        />
         <li className="upppercase py-6 text-2xl font-bold">
           <a href={"/#hero"} onClick={toggleMenu}>
             Accueil
@@ -63,7 +71,7 @@ const Header = () => {
             Contactez-moi
           </a>
         </li>
-      </ul>
+      </motion.ul>
     </nav>
   );
 };
