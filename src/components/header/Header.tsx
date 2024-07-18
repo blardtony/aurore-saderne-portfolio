@@ -19,11 +19,11 @@ const Header = () => {
   return (
     <nav
       className={
-        "sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out " +
+        "sticky top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out lg:h-20 " +
         (isScrolling ? "shadow-md" : " shadow-none")
       }
     >
-      <Link className="font-bold" to={"/"}>
+      <Link className="text-xl font-bold" to={"/"}>
         Aurore Saderne
       </Link>
       {isOpen ? (
