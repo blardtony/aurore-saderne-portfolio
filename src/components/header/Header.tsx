@@ -1,6 +1,5 @@
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "../common/Button";
 import { motion } from "framer-motion";
 
@@ -30,9 +29,12 @@ const Header = () => {
           className={"h-8 cursor-pointer"}
           onClick={() => toggleMenu()}
         />
-        <Link className="hidden text-xl font-bold lg:block" to={"/"}>
+        <a
+          className="hidden text-xl font-bold hover:text-green-200 lg:block"
+          href={"/#hero"}
+        >
           Aurore Saderne
-        </Link>
+        </a>
       </div>
       <Button url={"/#contact"}>Contactez-moi</Button>
       <motion.ul
