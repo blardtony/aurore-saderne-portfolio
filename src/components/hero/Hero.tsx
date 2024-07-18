@@ -13,11 +13,13 @@ const Hero = () => {
           <div className="my-2 text-2xl font-bold text-black md:text-3xl">
             Graphiste
           </div>
-          <p className="mb-2">
-            Je suis une étudiante qui râle tout le temps et qui est jamais
-            contente.
-          </p>
-          <p className="mb-2">J'aime me plaindre</p>
+          <div className="mb-4">
+            <p>
+              Je suis une étudiante qui râle tout le temps et qui est jamais
+              contente.
+            </p>
+            <p>J'aime me plaindre</p>
+          </div>
           <Button url={cv}>Télécharger mon CV</Button>
         </div>
         <img
