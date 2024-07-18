@@ -44,24 +44,24 @@ const Header = () => {
         }
       >
         <li className="upppercase py-6 text-2xl font-bold">
-          <Link to={"/#hero"} onClick={toggleMenu}>
+          <a href={"/#hero"} onClick={toggleMenu}>
             Accueil
-          </Link>
+          </a>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <Link to={"/#work"} onClick={toggleMenu}>
+          <a href={"/#work"} onClick={toggleMenu}>
             Expériences
-          </Link>
+          </a>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <Link to={"/#school"} onClick={toggleMenu}>
+          <a href={"/#school"} onClick={toggleMenu}>
             Parcours scolaire
-          </Link>
+          </a>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <Link to={"/#contact"} onClick={toggleMenu}>
+          <a href={"/#contact"} onClick={toggleMenu}>
             Contactez-moi
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
