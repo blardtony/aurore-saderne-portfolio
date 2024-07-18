@@ -1,6 +1,6 @@
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
-import hero from "../../assets/hero.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
@@ -19,21 +19,21 @@ const Header = () => {
   return (
     <nav
       className={
-        "sticky top-0 z-10 flex h-24 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out " +
+        "sticky top-0 z-10 flex h-20 w-full items-center justify-between bg-background px-6 py-2 transition-shadow ease-in-out " +
         (isScrolling ? "shadow-md" : " shadow-none")
       }
     >
-      <a className="h-full">
-        <img className="h-full" src={hero} />
-      </a>
+      <Link className="font-bold" to={"/"}>
+        Aurore Saderne
+      </Link>
       {isOpen ? (
         <XMarkIcon
-          className="z-30 h-10 cursor-pointer text-white"
+          className="z-30 h-full max-h-10 cursor-pointer text-white"
           onClick={() => toggleMenu()}
         />
       ) : (
         <Bars3BottomLeftIcon
-          className="z-30 h-10 cursor-pointer"
+          className="z-30 h-full max-h-10 cursor-pointer"
           onClick={() => toggleMenu()}
         />
       )}
@@ -44,24 +44,24 @@ const Header = () => {
         }
       >
         <li className="upppercase py-6 text-2xl font-bold">
-          <a href="#hero" onClick={toggleMenu}>
+          <Link to={"/#hero"} onClick={toggleMenu}>
             Accueil
-          </a>
+          </Link>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <a href="#work" onClick={toggleMenu}>
+          <Link to={"/#work"} onClick={toggleMenu}>
             Expériences
-          </a>
+          </Link>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <a href="#school" onClick={toggleMenu}>
+          <Link to={"/#school"} onClick={toggleMenu}>
             Parcours scolaire
-          </a>
+          </Link>
         </li>
         <li className="upppercase py-6 text-2xl font-bold">
-          <a href="#contact" onClick={toggleMenu}>
+          <Link to={"/#contact"} onClick={toggleMenu}>
             Contactez-moi
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
