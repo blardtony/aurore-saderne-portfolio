@@ -39,7 +39,7 @@ const Header = () => {
       )}
       <ul
         className={
-          "fixed top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-200 ease-in-out md:w-80 md:duration-500 " +
+          "fixed top-0 z-20 h-full w-full content-center bg-black text-center text-white transition-all duration-200 ease-in-out lg:w-80 lg:duration-500 " +
           (isOpen ? "right-0" : "-right-full")
         }
       >
