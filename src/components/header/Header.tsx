@@ -50,7 +50,7 @@ const Header = () => {
         }
       >
         <XMarkIcon
-          className={"absolute left-4 top-4 h-8 max-h-10 cursor-pointer"}
+          className={"absolute left-6 top-4 h-8 max-h-10 cursor-pointer"}
           onClick={() => toggleMenu()}
         />
         <li className="upppercase py-6 text-2xl font-bold">
