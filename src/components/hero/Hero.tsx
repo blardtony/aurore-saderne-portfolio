@@ -1,8 +1,8 @@
 import Title from "../common/Title";
 import hero from "../../assets/hero.png";
 import Section from "../common/Section";
-import Button from "../common/Button";
 import cv from "../../../public/cv.pdf";
+import AnchorButton from "../common/Button/AnchorButton";
 
 const Hero = () => {
   return (
@@ -20,7 +20,9 @@ const Hero = () => {
             </p>
             <p>J'aime me plaindre</p>
           </div>
-          <Button url={cv}>Télécharger mon CV</Button>
+          <AnchorButton target="_blank" href={cv}>
+            Télécharger mon CV
+          </AnchorButton>
         </div>
         <img
           className="max-h-[500px]"

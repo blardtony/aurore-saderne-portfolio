@@ -1,7 +1,7 @@
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import Button from "../common/Button";
 import { motion } from "framer-motion";
+import AnchorButton from "../common/Button/AnchorButton";
 
 const Header = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
@@ -36,7 +36,7 @@ const Header = () => {
           Aurore Saderne
         </a>
       </div>
-      <Button url={"/#contact"}>Contactez-moi</Button>
+      <AnchorButton href={"/#contact"}>Contactez-moi</AnchorButton>
       <motion.ul
         initial={{ x: "-100%" }}
         variants={{
