@@ -1,7 +1,7 @@
 import Title from "../common/Title/Title";
 import hero from "../../assets/hero.png";
 import Section from "../common/Section";
-import cv from "../../../public/cv.pdf";
+import cv from "/cv.pdf";
 import AnchorButton from "../common/Button/AnchorButton";
 
 const Hero = () => {
