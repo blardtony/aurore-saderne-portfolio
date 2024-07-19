@@ -1,5 +1,5 @@
 import Section from "../common/Section";
-import Title from "../common/Title";
+import Title from "../common/Title/Title";
 
 const Contact = () => {
   return (

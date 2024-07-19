@@ -1,4 +1,4 @@
-import Title from "../common/Title";
+import Title from "../common/Title/Title";
 import hero from "../../assets/hero.png";
 import Section from "../common/Section";
 import cv from "../../../public/cv.pdf";
@@ -9,7 +9,7 @@ const Hero = () => {
     <Section id={"hero"}>
       <div className="grid place-items-center items-center gap-8 lg:grid-cols-2">
         <div>
-          <Title big>Aurore Saderne</Title>
+          <Title size={"large"}>Aurore Saderne</Title>
           <div className="my-2 text-2xl font-bold text-black md:text-3xl">
             Graphiste
           </div>

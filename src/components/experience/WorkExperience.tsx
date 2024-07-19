@@ -1,6 +1,6 @@
 import ExperienceItem from "../common/ExperienceItem";
 import Section from "../common/Section";
-import Title from "../common/Title";
+import Title from "../common/Title/Title";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
 type Experience = {
   date: string;
