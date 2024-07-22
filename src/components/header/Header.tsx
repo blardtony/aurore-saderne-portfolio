@@ -24,13 +24,13 @@ const Header = () => {
         (isScrolling ? "shadow-md" : " shadow-none")
       }
     >
-      <div className="grid h-full grid-flow-col items-center gap-8">
+      <div className="flex h-full items-center gap-8">
         <Bars3BottomLeftIcon
           className={"h-8 cursor-pointer"}
           onClick={() => toggleMenu()}
         />
         <a
-          className="hidden text-xl font-bold hover:text-green-200 lg:block"
+          className="hidden text-xl font-bold hover:text-green-200 sm:block"
           href={"/#hero"}
         >
           Aurore Saderne
