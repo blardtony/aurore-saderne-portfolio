@@ -1,6 +1,6 @@
 import Title from "../common/Title/Title";
 import hero from "../../assets/hero.png";
-import Section from "../common/Section";
+import Section from "../common/Section/Section";
 import cv from "/cv.pdf";
 import AnchorButton from "../common/Button/AnchorButton";
 
