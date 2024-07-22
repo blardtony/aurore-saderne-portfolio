@@ -1,5 +1,6 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import HeaderMenuItem from "./HeaderMenuItem";
 
 type HeaderMenuProps = {
   isOpen: boolean;
@@ -23,26 +24,18 @@ const HeaderMenu = ({ isOpen, toggleMenu }: HeaderMenuProps) => {
         className={"absolute left-6 top-4 h-8 max-h-10 cursor-pointer"}
         onClick={() => toggleMenu()}
       />
-      <li className="upppercase py-6 text-2xl font-bold">
-        <a href={"/#hero"} onClick={toggleMenu}>
-          Accueil
-        </a>
-      </li>
-      <li className="upppercase py-6 text-2xl font-bold">
-        <a href={"/#work"} onClick={toggleMenu}>
-          Expériences
-        </a>
-      </li>
-      <li className="upppercase py-6 text-2xl font-bold">
-        <a href={"/#school"} onClick={toggleMenu}>
-          Parcours scolaire
-        </a>
-      </li>
-      <li className="upppercase py-6 text-2xl font-bold">
-        <a href={"/#contact"} onClick={toggleMenu}>
-          Contactez-moi
-        </a>
-      </li>
+      <HeaderMenuItem href={"/#hero"} toggleMenu={toggleMenu}>
+        Accueil
+      </HeaderMenuItem>
+      <HeaderMenuItem href={"/#work"} toggleMenu={toggleMenu}>
+        Expériences
+      </HeaderMenuItem>
+      <HeaderMenuItem href={"/#school"} toggleMenu={toggleMenu}>
+        Parcours scolaire
+      </HeaderMenuItem>
+      <HeaderMenuItem href={"/#contact"} toggleMenu={toggleMenu}>
+        Contactez-moi
+      </HeaderMenuItem>
     </motion.ul>
   );
 };
