@@ -6,6 +6,16 @@ type HeaderMenuProps = {
   isOpen: boolean;
   toggleMenu: () => void;
 };
+type HeaderItem = {
+  href: string;
+  text: string;
+};
+const headerItems: HeaderItem[] = [
+  { href: "/#hero", text: "Accueil" },
+  { href: "/#work", text: "Expériences" },
+  { href: "/#school", text: "Parcours scolaire" },
+  { href: "/#contact", text: "Contactez-moi" },
+];
 const HeaderMenu = ({ isOpen, toggleMenu }: HeaderMenuProps) => {
   return (
     <motion.ul
@@ -24,18 +34,11 @@ const HeaderMenu = ({ isOpen, toggleMenu }: HeaderMenuProps) => {
         className={"absolute left-6 top-4 h-8 max-h-10 cursor-pointer"}
         onClick={() => toggleMenu()}
       />
-      <HeaderMenuItem href={"/#hero"} toggleMenu={toggleMenu}>
-        Accueil
-      </HeaderMenuItem>
-      <HeaderMenuItem href={"/#work"} toggleMenu={toggleMenu}>
-        Expériences
-      </HeaderMenuItem>
-      <HeaderMenuItem href={"/#school"} toggleMenu={toggleMenu}>
-        Parcours scolaire
-      </HeaderMenuItem>
-      <HeaderMenuItem href={"/#contact"} toggleMenu={toggleMenu}>
-        Contactez-moi
-      </HeaderMenuItem>
+      {headerItems.map((item, index) => (
+        <HeaderMenuItem key={index} href={item.href} toggleMenu={toggleMenu}>
+          {item.text}
+        </HeaderMenuItem>
+      ))}
     </motion.ul>
   );
 };
