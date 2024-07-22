@@ -11,8 +11,12 @@ const HeaderMenuItem = ({
   children,
 }: HeaderMenuItemProps) => {
   return (
-    <li className="upppercase py-6 text-2xl font-bold">
-      <a href={href} onClick={toggleMenu}>
+    <li className="upppercase py-6 text-2xl">
+      <a
+        className="font-bold transition-colors ease-in-out hover:text-green-200"
+        href={href}
+        onClick={toggleMenu}
+      >
         {children}
       </a>
     </li>

@@ -11,7 +11,7 @@ const HeaderBrand = ({ toggleMenu }: HeaderBrandProps) => {
         onClick={() => toggleMenu()}
       />
       <a
-        className="hidden text-xl font-bold hover:text-green-200 sm:block"
+        className="hidden text-xl font-bold transition-colors ease-in-out hover:text-green-200 sm:block"
         href={"/#hero"}
       >
         Aurore Saderne
