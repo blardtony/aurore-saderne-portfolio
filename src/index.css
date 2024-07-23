@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Playwrite";
+  src:
+    local(PlaywriteHRLijeva-Regular),
+    url(/fonts/PlaywriteHRLijeva-Regular.ttf) format("truetype");
+}
