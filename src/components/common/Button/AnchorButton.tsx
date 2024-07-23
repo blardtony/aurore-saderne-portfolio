@@ -14,8 +14,8 @@ const AnchorButton = ({
   ...props
 }: AnchorButtonProps) => {
   return (
-    <a {...props}>
-      <Button variant={variant} size={size} className={className}>
+    <a {...props} className={className}>
+      <Button variant={variant} size={size}>
         {children}
       </Button>
     </a>
