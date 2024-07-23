@@ -9,12 +9,13 @@ type HeaderMenuProps = {
 type HeaderItem = {
   href: string;
   text: string;
+  id: string;
 };
 const headerItems: HeaderItem[] = [
-  { href: "/#hero", text: "Accueil" },
-  { href: "/#work", text: "Expériences" },
-  { href: "/#school", text: "Parcours scolaire" },
-  { href: "/#contact", text: "Contactez-moi" },
+  { href: "/#hero", text: "Accueil", id: "hero" },
+  { href: "/#work", text: "Expériences", id: "work" },
+  { href: "/#school", text: "Parcours scolaire", id: "school" },
+  { href: "/#contact", text: "Contactez-moi", id: "contact" },
 ];
 const HeaderMenu = ({ isOpen, toggleMenu }: HeaderMenuProps) => {
   return (
@@ -35,7 +36,12 @@ const HeaderMenu = ({ isOpen, toggleMenu }: HeaderMenuProps) => {
         onClick={() => toggleMenu()}
       />
       {headerItems.map((item, index) => (
-        <HeaderMenuItem key={index} href={item.href} toggleMenu={toggleMenu}>
+        <HeaderMenuItem
+          key={index}
+          href={item.href}
+          toggleMenu={toggleMenu}
+          id={item.id}
+        >
           {item.text}
         </HeaderMenuItem>
       ))}
