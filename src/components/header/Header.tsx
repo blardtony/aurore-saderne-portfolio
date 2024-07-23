@@ -3,21 +3,14 @@ import AnchorButton from "../common/Button/AnchorButton";
 import HeaderMenu from "./HeaderMenu";
 import { cn } from "../../libs/utils";
 import HeaderBrand from "./HeaderBrand";
+import useScrolling from "../../hooks/useScrolling";
 
 const Header = () => {
-  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+  const isScrolling = useScrolling();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => {
     setIsOpen((isOpen) => !isOpen);
   };
-  const handleScroll = () => {
-    if (window.scrollY > 80) {
-      setIsScrolling(true);
-    } else {
-      setIsScrolling(false);
-    }
-  };
-  window.addEventListener("scroll", handleScroll);
   return (
     <nav
       className={cn(
