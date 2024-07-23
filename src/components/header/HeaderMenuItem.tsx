@@ -15,7 +15,6 @@ const HeaderMenuItem = ({
   children,
 }: HeaderMenuItemProps) => {
   const activeSection: string = useActiveAnchorLink();
-  console.log(activeSection);
   return (
     <li className="upppercase py-6 text-2xl">
       <a

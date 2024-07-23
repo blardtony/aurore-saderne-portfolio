@@ -15,16 +15,14 @@ const useActiveAnchorLink = () => {
         }
       },
       {
-        threshold: 1,
-        rootMargin: "0px 0px -25% 0px",
+        threshold: 0,
+        rootMargin: "-25% 0% -75% 0%",
       },
     );
-
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       observer.current?.observe(section);
     });
-    //Cleanup function to remove observer
     return () => {
       sections.forEach((section) => {
         observer.current?.unobserve(section);
