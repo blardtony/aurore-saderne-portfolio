@@ -24,7 +24,7 @@ const HeaderMenuMobile = () => {
     <>
       <Bars3BottomLeftIcon
         onClick={toggleMenu}
-        className={"h-full max-h-8 cursor-pointer lg:hidden"}
+        className={"block h-full max-h-8 cursor-pointer lg:hidden"}
       />
       <motion.ul
         initial={{ x: "-100%" }}
