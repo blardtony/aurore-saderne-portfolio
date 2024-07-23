@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Header from "../header/Header";
+import HeaderTwo from "../header2/HeaderTwo";
 
 const Layout: React.FC = () => {
   return (
     <>
-      <Header />
+      <HeaderTwo />
       <div className="container mx-auto px-6 py-8">
         <Outlet />
       </div>
