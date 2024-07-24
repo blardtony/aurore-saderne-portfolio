@@ -12,7 +12,7 @@ const headerItems: HeaderItem[] = [
   { href: "/#hero", text: "Accueil", id: "hero" },
   { href: "/#work", text: "Expériences", id: "work" },
   { href: "/#school", text: "Parcours scolaire", id: "school" },
-  { href: "/#contact", text: "Contactez-moi", id: "contact" },
+  { href: "/#projects", text: "Mes projets", id: "projects" },
 ];
 
 const HeaderMenuMobile = () => {
