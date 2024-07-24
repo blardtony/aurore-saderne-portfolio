@@ -9,7 +9,7 @@ const HeaderMenu2 = () => {
         <a
           href={"/#hero"}
           className={cn(
-            "text-black transition-colors duration-300 ease-in-out",
+            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
             activeSection === "hero" && "font-bold text-green-200",
           )}
         >
@@ -20,7 +20,7 @@ const HeaderMenu2 = () => {
         <a
           href={"/#work"}
           className={cn(
-            "text-black transition-colors duration-300 ease-in-out",
+            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
             activeSection === "work" && "font-bold text-green-200",
           )}
         >
@@ -31,7 +31,7 @@ const HeaderMenu2 = () => {
         <a
           href={"/#school"}
           className={cn(
-            "text-black transition-colors duration-300 ease-in-out",
+            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
             activeSection === "school" && "font-bold text-green-200",
           )}
         >
