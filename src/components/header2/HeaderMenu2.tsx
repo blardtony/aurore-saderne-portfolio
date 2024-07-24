@@ -1,43 +1,23 @@
 import useActiveAnchorLink from "../../hooks/useActiveAnchorLink";
-import { cn } from "../../libs/utils";
-
+import HeaderItemMenu from "./HeaderItemMenu";
+type HeaderItem = {
+  href: string;
+  text: string;
+  id: string;
+};
+const headerItems: HeaderItem[] = [
+  { href: "/#hero", text: "Accueil", id: "hero" },
+  { href: "/#work", text: "Expériences", id: "work" },
+  { href: "/#school", text: "Parcours scolaire", id: "school" },
+  { href: "/#projects", text: "Mes projets", id: "projects" },
+];
 const HeaderMenu2 = () => {
   const activeSection: string = useActiveAnchorLink();
   return (
     <ul className="hidden gap-8 text-sm uppercase lg:flex">
-      <li>
-        <a
-          href={"/#hero"}
-          className={cn(
-            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
-            activeSection === "hero" && "font-bold text-green-200",
-          )}
-        >
-          Accueil
-        </a>
-      </li>
-      <li>
-        <a
-          href={"/#work"}
-          className={cn(
-            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
-            activeSection === "work" && "font-bold text-green-200",
-          )}
-        >
-          Expériences
-        </a>
-      </li>
-      <li>
-        <a
-          href={"/#school"}
-          className={cn(
-            "text-black transition-colors duration-300 ease-in-out hover:text-green-200",
-            activeSection === "school" && "font-bold text-green-200",
-          )}
-        >
-          Parcours scolaire
-        </a>
-      </li>
+      {headerItems.map((item, index) => (
+        <HeaderItemMenu key={index} item={item} activeSection={activeSection} />
+      ))}
     </ul>
   );
 };
