@@ -29,7 +29,7 @@ const linkList = [
 const Footer = () => {
   const year: number = new Date().getFullYear();
   return (
-    <footer className="container mx-auto px-6 py-8">
+    <footer className="container mx-auto px-6 py-2">
       <div className="grid w-full gap-8 md:grid-flow-col md:justify-between md:gap-0">
         <div className="font-playwrite text-xl font-bold">Aurore Saderne</div>
         <FooterList title="Restons en contact" list={contactList} />
